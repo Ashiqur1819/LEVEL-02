@@ -1,13 +1,13 @@
-import dotenv from 'dotenv';
-import path from 'path';
+import dotenv from "dotenv";
+import path from "path";
 
 dotenv.config({
-    path: path.join(process.cwd(), '.env')
+  path: path.join(process.cwd(), ".env"),
 });
 
 const config = {
-    connectionString : process.env.CONNECTIONSTRING || '',
-    port: process.env.PORT || 5000
-}
+  connectionString: process.env.CONNECTIONSTRING || "",
+  port: process.env.PORT || 5000,
+};
 
 export default config;
